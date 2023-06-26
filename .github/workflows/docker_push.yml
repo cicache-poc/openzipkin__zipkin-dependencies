@@ -1,5 +1,5 @@
 # Based on https://github.com/openzipkin/zipkin-dependencies/blob/cron/.github/workflows/docker_push.yml.  
-# The Git commit hash is "b32c6e78da8b41d86c938716f25a2ac6bceba54a". 
+# The Git commit hash is "b32c6e78da8b41d86c938716f25a2ac6bceba54a".  
 
 # yamllint --format github .github/workflows/docker_push.yml
 ---
