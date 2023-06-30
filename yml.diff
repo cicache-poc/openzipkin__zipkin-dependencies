@@ -1,0 +1,15 @@
+0a1,3
+> # Based on https://github.com/openzipkin/zipkin-dependencies/blob/cron/.github/workflows/docker_push.yml.  
+> # The Git commit hash is "b32c6e78da8b41d86c938716f25a2ac6bceba54a".  
+> 
+28,30c31
+<           build-bin/git/login_git &&
+<           build-bin/docker/configure_docker_push &&
+<           build-bin/docker_push $(echo ${GITHUB_REF} | cut -d/ -f 3)
+---
+>           mkdir ~/.docker || echo "a_docker_login_credentials" > ~/.docker/config.json          
+45c46
+<           DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+---
+>           DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
+\ No newline at end of file
